@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Başlığı</title>
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Local CSS dosyası -->
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* İç stil kodları buraya */
+        #altmenu {
+            position: absolute;
+            display: none;
+            top: -10px;
+            left: 175px;
+        }
+
+        #altmenu>li {
+            padding: 10px;
+            display: block;
+            width: 90px;
+            color: #000000;
+            background: #FFFFFF;
+            z-index: 99999999;
+            border-bottom: 1px solid #000;
+        }
+
+        #acil:hover ul {
+            display: block;
+        }
+
+        #acil ul>li:hover {
+            background: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="project">
+        <div class="menu">
+            <ul style="position: relative;">
+                <li class="logo"><img src="C:\Users\Kullanıcı\Desktop\Klasör\logo.png" alt="Logo"></li>
+                <li class="active">Anasayfa</li>
+                <li id="acil">Hizmetler
+                    <ul id="altmenu">
+                        <li><h6>Alt başlık</h6></li>
+                        <li><h6>Alt başlık</h6></li>
+                        <li><h6>Alt Başlık</h6></li>
+                    </ul>
+                </li>
+                <li>Hakkımızda</li>
+                <li>İletişim</li>
+                <li><a href="#" class="kayitol"><span>Kayıt OL</span></a></li>
+                <li><a href="#" class="girisyap"><span>Giriş Yap</span></a></li>
+            </ul>
+        </div>
+        <div class="banner" style="margin-top: 50px;">
+            <div class="app-text">
+                <h2>BU BÖLGEYE METİN BAŞLIĞI ATABİLİRSİNİZ.</h2>
+                <p>BU BÖLGEYE YAZI YAZABİLİRSİNİZ.</p>
+            </div>
+            <div class="play-btn">
+                <div class="play-btn-inner"><i class="fa fa-play"></i></div>
+                <small><b>Daha Fazla Bilgi Edinin.</b></small>
+            </div>
+        </div>
+        <div class="app-picture">
+            <img src="C:\Users\Kullanıcı\Desktop\Klasör\mh.jpg" alt="Uygulama Resmi">
+        </div>
+    </div>
+
+    <div class="quick-links">
+        <ul>
+            <li><i class="fa fa-share-alt"></i><p>Paylaş</p></li>
+            <li><i class="fa fa-bullhorn"></i><p>Duyurular</p></li>
+            <li><i class="fa fa-cog"></i><p>İstatistikler</p></li>
+            <li><i class="fa fa-bell"></i><p>Bildirimler</p></li>
+        </ul>
+    </div>
+
+    <div class="social-icons">
+        <ul>
+            <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa fa-twitch"></i></a></li>
+            <li><a href="#"><i class="fa fa-steam"></i></a></li>
+        </ul>
+    </div>
+</body>
+</html>
